@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-family:"Poppins", sans-serif;}
+
+body{height: 100vh;background: url(Cofee.jpg);
+background-position: center; background-size: cover;}
+
+header{position: fixed; top: 0; left: 0; width: 100%; padding: 1.25rem;}
+
+header .nav-bar{display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between;
+max-width: 75rem; margin: 0 auto}
+
+.nav-bar .logo{font-size: 2.1rem; font-weight: 600;}
+
+.nav-bar .logo span{color: #C06B3E;}
+
+.nav-bar .menu-links{display: flex; gap: 2.5rem; list-style: none;}
+
+
+
+
+.nav-bar a{color: #fff; text-decoration: none;}
+
+.nav-bar a:hover{color: #C06B3E; transition: 0.2 ease; padding: 0 1.25rem;}
+
+
+.hero-section{height: 100vh; display: flex; align-items: center;}
+.hero-section .content{color:#fff; max-width: 75rem; width:100% ; margin: 0 auto;}
+
+
+.hero-section .content h1{font-size: 3rem; max-width: 37.5rem;}
+
+
+.hero-section .content p{font-weight: 300; margin-top: .9375rem; max-width: 37.5rem;}
+
+
+.hero-section .content button{background:#fff; outline: none; border: none; 
+    font-size: 1rem;font-weight: 500; margin-top: 2.375rem;
+padding: .75rem 1.875rem; border-radius: .375rem; cursor: pointer;
+transition: 0.2s ease;}
+
+.hero-section .content button:hover{background-color: #C06B3E; color: #fff;}
+
+#coffee-menu{position: absolute; top: 1.1875rem; left: 1.25rem ; font-size: 1.25rem; display: none;}
+#menu-button{color: #fff; display: none; font-size: 2.1rem; cursor: pointer;}
+#close-menu-button{position: absolute;display: none; cursor: pointer; right: 1.25rem; 
+top: 1.25rem; padding: .3125rem auto;}
+
+
+
+@media screen and (max-width: 53.5625rem) {#menu-button{display: block;} #close-menu-button{display: block;}
+#coffee-menu{display: block;}}
+
+@media only screen and (max-width: 53.125rem) {
+  .nav-bar .menu-links { position: fixed; left: 0;
+    top: 0; width: 16.25rem; height: 100vh; background: #fff;border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    flex-direction: column; 
+    padding: 4.375rem 2.5rem 0; list-style: none; font-weight: 539;
+  }
+  .nav-bar a{color: #000;}
+  
+}
+
