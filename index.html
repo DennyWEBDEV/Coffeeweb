@@ -40,17 +40,19 @@
 
     </section>
 
-    <script>
+    <script>const header = document.querySelector("header");
+        const menuBtn = document.querySelector("#menu-button");
+        const closeMenu = document.querySelector("#close-menu-button");
+        
+        menuBtn.addEventListener("click", () => {header.classList.toggle("show-mobile-menu");})
+        
+        closeMenu.click();
+        
+          
+        </script>
 
-const header = document.querySelector("header");
-const menuBtn = document.querySelector("#menu-button");
-const closeMenu = document.querySelector("#close-menu-button");
 
-menuBtn.addEventListener("click", () => {header.classList.toggle("show-mobile-menu");})
 
-closeMenu.click();
-
-    </script>
 
     
     
